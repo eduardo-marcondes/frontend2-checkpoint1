@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/btp/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edz Store - Cards</title>
+    <link rel="shortcut icon" href="./imgs/logo_icon.png" type="image/x-icon">
+</head>
+
+<body class="container-fluid">
+
+    <header class="row">
+        <!-- Navibar -->
+        <nav class="navbar navbar-dark  justify-content-between">
+            <!--  Button Collapse -->
+            <div class="d-md-none">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navcollapse" aria-controls="navcollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- Menus lista md -->
+            <div class="d-none d-md-block">
+                <ul class="nav">
+                    <li><a href="#" class="nav-link fw-bold">INÍCIO</a></li>
+                    <li><a href="aequipe.html" class="nav-link fw-bold">A EQUIPE</a></li>
+                    <li><a href="contato.html" class="nav-link fw-bold">CONTATO</a></li>
+                </ul>
+            </div>
+            <!-- Logo ao centro -->
+            <div class="img-nav">
+                <img src="./imgs/logo_edz.png" class="img-fluid" width="170" height="37" alt="Logo Edz Store">
+            </div>
+            <!-- Botão ativador do form - Publicar-->
+            <div>
+                <button type="button" class="btn fw-bold" data-bs-toggle="modal" id="btn-nav" style="color:#F2F2F2"
+                    data-bs-target="#exampleModal">PUBLICAR</button>
+            </div>
+            <!-- Modal form -->
+            <div class="modal fade" id="exampleModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- Titulo modal -->
+                            <h5 class="modal-title" id="exampleModalLabel">Publique aqui seu Produto Tech!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- Body modal -->
+                        <div class="modal-body">
+                            <!-- Form modal -->
+                            <form>
+                                <!-- TITULO DO PRODUTO -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" maxlength="39" class="form-control"
+                                        placeholder="Titulo do Produto" required>
+                                    <label>Título descritivo</label>
+                                </div>
+                                <!-- URL PARA IMAGEM -->
+                                <div class="form-floating mb-3">
+                                    <input type="url" class="form-control"
+                                        placeholder="URL da imagem https://example.com/picture.jpg" required>
+                                    <label>URL da imagem https://example.com/picture.jpg</label>
+                                </div>
+                                <!-- VALOR de DE: -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" min="0" max="99999" step=".01" class="form-control"
+                                        placeholder="De: R$" required>
+                                    <label>De: R$</label>
+                                </div>
+                                <!-- Valor POR: -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" min="0" max="99999" step=".01" class="form-control"
+                                        placeholder="Por: R$" required>
+                                    <label>Por: R$</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <!-- NUMERO DE PARCELAS -->
+                                    <input type="number" min="2" max="12" class="form-control" placeholder="Nº Parcelas"
+                                        required>
+                                    <label>Nº Parcelas</label>
+                                </div>
+                                <!-- Avaliação -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" min="1" max="5" class="form-control"
+                                        placeholder="Avaliação do produto de 1-5" required>
+                                    <label>Avaliação do produto de 1-5</label>
+                                </div>
+                                <!-- button modal -->
+                                <div class="modal-footer">
+                                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar collapse (sanduíche) -->
+        <div class="navbar-collapse collapse border  d-md-none" style="background-color: #0049F5" id="navcollapse">
+            <div>
+                <ul class="nav justify-content-center my-3">
+                    <li><a href="#" class="nav-link fw-bold" style="color: #F2F2F2">INÍCIO</a></li>
+                    <li><a href="aequipe.html" class="nav-link fw-bold" style="color: #F2F2F2">A EQUIPE</a></li>
+                    <li><a href="contato.html" class="nav-link fw-bold" style="color: #F2F2F2">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Container para publicar os cards -->
+    <main class="row row-cols-2 row-cols-md-5 mt-3 g-3">
+        <!-- Card Exemplo -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <div class="cardImg">
+                    <img src="./imgs/notebook_avell.jpg" class="card-img-top p-2">
+                </div>
+                <div>
+                    <h5>Notebook Avell A70 MOB</h5>
+                </div>
+                <div class="stars mb-2">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                    <img src="imgs/star.png" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <div class="de">De: R$ 13.599,00</div>
+                    <div class="por">Por: R$ 12.899,70</div>
+                    <div class="parc">12x de R$ 1.074,90 s/ juros</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/btp/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

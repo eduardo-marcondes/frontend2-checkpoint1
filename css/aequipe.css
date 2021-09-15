@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+h4 {
+    margin-top: 1rem;
+    text-align: center;
+    color: #0D0D0D;
+    font-weight: bolder;
+}
+p {
+    text-align: center;
+    color: #242625;
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px #DBD630;
+    transition: 0.13s ease-in-out;
+    
+}
+.card:hover {
+    transform: scale(1.05);
+}
